@@ -1,0 +1,97 @@
+body {
+    /* background-color: aqua; */
+}
+
+.parent {
+    border: 1px solid black;
+    height: 100vh;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.nav {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+.section {
+    justify-content: space-between;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    height: 60vh;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.sidebar {
+    border: 1px solid black;
+    height: 100%;
+    width: 19.7%;
+    /* background-color: lightgreen; */
+}
+
+.content {
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    /* background-color: lightslategrey; */
+}
+
+.footer {
+    border: 1px solid black;
+    height: 25vh;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-color: rgb(2, 25, 49); */
+}
+
+img {
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+ul {
+    /* border: 1px solid black; */
+    justify-content: space-around;
+    cursor: pointer;
+    font-size: 20px;
+    list-style: none;
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+
+.sub {
+    width: 25%;
+    border: 1px solid black;
+    height: 40%;
+    /* background-color: brown; */
+}
+
+input {
+    display: none;
+}
+
+body:has(#basket:checked) #sidebarbasket {
+    display: none;
+}
+
+/* #profile {
+    display: none;
+} */
+
+body:has(#profile:checked) #profilebar {
+    display: none;
+}
